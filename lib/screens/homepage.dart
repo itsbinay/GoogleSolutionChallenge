@@ -25,14 +25,12 @@ class _HomePageState extends State<HomePage>{
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Padding(padding:EdgeInsets.symmetric(vertical:100)),
-            Text(
-              "AppName",
-              style: TextStyle(
-                color:Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold
-              )
+            Padding(padding:EdgeInsets.symmetric(vertical:15)),
+            Container(
+              width:500,
+              child:Image.asset(
+                "assets/images/register/Logo.png"
+              ),
             ),
             Expanded(
               child: Column(
@@ -51,7 +49,7 @@ class _HomePageState extends State<HomePage>{
                   ),
                   HomeButton(
                     onPressedButton: (){
-
+                      Navigator.pushNamed(context, '/login');
                     },
                     buttonText: "Get Started ",
                   ),

@@ -4,7 +4,7 @@ class HomeButton extends StatelessWidget{
 
   final double height;
   final Function onPressedButton;
-  final List colorList;
+  final List<Color> colorList;
   final String buttonText;
 
   HomeButton({

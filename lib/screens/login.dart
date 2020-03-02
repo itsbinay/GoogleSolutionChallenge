@@ -13,8 +13,11 @@ class _LoginState extends State<Login>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: null,
-      body: Expanded(
-        child:LoginView()
+      body: Container(
+        color: Colors.white,
+        child: Center(
+          child: LoginView()
+        )
       )
     );
   }

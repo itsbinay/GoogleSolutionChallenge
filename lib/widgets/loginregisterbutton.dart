@@ -12,7 +12,7 @@ class LoginRegisterButton extends StatelessWidget{
   LoginRegisterButton({
     key,
     @required this.buttonText,
-    this.fontSize=20,
+    this.fontSize=27,
     this.fontColor = Colors.white,
     @required this.buttonColor,
     this.icon,
@@ -41,7 +41,8 @@ class LoginRegisterButton extends StatelessWidget{
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: this.fontColor,
-                fontSize: this.fontSize
+                fontSize: this.fontSize,
+                fontWeight: FontWeight.bold
               ),
             )
           ]
