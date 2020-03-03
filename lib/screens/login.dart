@@ -1,4 +1,4 @@
-import 'package:GoogleSolChal/widgets/login/loginView.dart';
+import 'package:GoogleSolChal/widgets/login/newloginview.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget{
@@ -14,9 +14,11 @@ class _LoginState extends State<Login>{
     return Scaffold(
       appBar: null,
       body: Container(
-        color: Colors.white,
+        padding: EdgeInsets.all(0),
+        color: Colors.grey[100],
         child: Center(
-          child: LoginView()
+          child: NewLoginView()
+          //LoginView()
         )
       )
     );
