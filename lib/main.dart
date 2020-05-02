@@ -1,6 +1,6 @@
+import 'package:GoogleSolChal/screens/dashboard.dart';
 import 'package:GoogleSolChal/screens/homepage.dart';
 import 'package:GoogleSolChal/screens/login.dart';
-import 'package:GoogleSolChal/screens/googlemap.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(GoogleSolutionChallenge());
@@ -17,7 +17,7 @@ class GoogleSolutionChallenge extends StatelessWidget {
       routes: {
         '/': (context) => HomePage(),
         '/login': (context) => Login(),
-        '/map': (context) => GoogleMap()
+        '/dashboard': (context) => Dashboard()
       },
     );
   }

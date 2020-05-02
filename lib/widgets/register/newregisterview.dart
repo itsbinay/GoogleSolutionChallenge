@@ -89,7 +89,9 @@ class _NewRegisterViewState extends State<NewRegisterView>{
                   padding: EdgeInsets.symmetric(horizontal:35,vertical:30),
                   child:GradientButton(
                     text: "REGISTER",
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.pushNamed(context, '/dashboard');
+                    },
                   )
                 )
               ],

@@ -2,6 +2,7 @@ import 'package:GoogleSolChal/widgets/gradientButton.dart';
 import 'package:GoogleSolChal/widgets/login/thirdpartybutton.dart';
 import 'package:GoogleSolChal/widgets/newfieldinput.dart';
 import 'package:flutter/material.dart';
+import 'package:GoogleSolChal/screens/register.dart';
 
 class NewLoginView extends StatefulWidget{
 
@@ -68,7 +69,12 @@ class _NewLoginViewState extends State<NewLoginView>{
         Padding(
           padding: EdgeInsets.symmetric(vertical:20,horizontal:50),
           child: GradientButton(
-            onPressed: (){},
+            onPressed: (){
+              Navigator.push(
+                context, 
+                MaterialPageRoute(builder: (context)=> Register())
+              );              
+            },
             text: "SIGN IN",
           )
         ),

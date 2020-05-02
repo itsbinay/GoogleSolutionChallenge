@@ -21,6 +21,9 @@ class GradientButton extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return GestureDetector(
+      onTap: (){
+        onPressed();
+      },
       child: Container(
         padding: EdgeInsets.symmetric(vertical:15),
         decoration: BoxDecoration(
